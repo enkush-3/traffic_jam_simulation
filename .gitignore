@@ -1,5 +1,35 @@
+# Python compiled files
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-__init__.py
-docs/
-tests/
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated files
+*.log
+*.tmp
+*.bak
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Project specific (заавал биш, хэрэв docs дотор гарсан файл нуухыг хүсвэл)
+docs/*.pdf    # хэрэв тайлан PDF-г коммит хийхгүй бол
+docs/*.odt
