@@ -29,7 +29,3 @@ htmlcov/
 # OS metadata
 .DS_Store
 Thumbs.db
-
-# Project specific (заавал биш, хэрэв docs дотор гарсан файл нуухыг хүсвэл)
-docs/*.pdf    # хэрэв тайлан PDF-г коммит хийхгүй бол
-docs/*.odt
