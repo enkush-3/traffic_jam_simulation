@@ -1,16 +1,12 @@
 
 import numpy as np
 import pytest
+
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from src.simulation import (
-    run_monte_carlo,
-    get_lambda_for_hour,
-    simulate_24h_one_direction,
-    _compute_comparison_stats,
-)
+from src.simulation import run_monte_carlo, get_lambda_for_hour, simulate_24h_one_direction, _compute_comparison_stats
 
 def test_run_monte_carlo():
     mean_q, mean_w = run_monte_carlo(lam=15, green_sec=40, red_sec=50, duration_sec=100, n_trials=10)

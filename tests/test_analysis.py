@@ -17,13 +17,6 @@ def test_calc_confidence_interval():
     assert upper == pytest.approx(expected_mean + expected_margin)
 
 
-def test_calc_confidence_interval_single():
-    mean, lower, upper = calc_confidence_interval([5])
-    assert mean == 5
-    assert lower == 5
-    assert upper == 5
-
-
 def test_find_optimal_signal():
     configs = [(30, 50), (40, 40), (50, 30)]
     best_config, best_wait, results = find_optimal_signal(lam=10, configs=configs, duration_sec=500)

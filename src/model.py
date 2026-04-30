@@ -22,5 +22,5 @@ def simulate_intersection(lam=15, green_sec=40, red_sec=50, duration_sec=3600, r
             wait_times.append(queue)
             queue -= 1
         queue_log[t] = queue
-        
+
     return queue_log, wait_times

@@ -250,7 +250,7 @@ def plot_convergence_and_confidence():
     plt.savefig(f'{OUTPUT_DIR}E-2. monte_carlo_convergence.png')
 
 
-def plot_comparison(real_lam=26.666, sim_lam=15, green=40, red=50, duration_sec=3600):
+def plot_comparison(real_lam=26.666, sim_lam=15, green=60, red=30, duration_sec=3600):
     """Бодит өгөгдөл ба загварын харьцуулалтын графикийг зурж хадгална."""
     stats = _compute_comparison_stats(real_lam, sim_lam, green, red, duration_sec)
     q_real = stats["q_real"]

@@ -16,4 +16,4 @@
 
 1. Сангуудыг суулгах: `pip install -r requirements.txt`
 2. Тестүүдийг шалгах: `pytest tests/ -v`
-3. Үндсэн симуляцыг ажиллуулах: `python src/simulation.py` (эсвэл тусдаа script бичиж ажиллуулна)
+3. Үндсэн симуляцыг ажиллуулах: `cd src/ python visualation.py` (эсвэл тусдаа script бичиж ажиллуулна)

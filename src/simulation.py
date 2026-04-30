@@ -17,7 +17,6 @@ def run_monte_carlo(lam=15, green_sec=40, red_sec=50, duration_sec=3600, n_trial
     return np.array(all_mean_queues), np.array(all_mean_waits)
 
 
-
 def get_lambda_for_hour(hour):
     if (8 <= hour <= 9) or (17 <= hour <= 19):
         return 25.0
