@@ -1,7 +1,6 @@
 import numpy as np
 from model import simulate_intersection
 
-
 def run_monte_carlo(lam=15, green_sec=40, red_sec=50, duration_sec=3600, n_trials=1000):
     all_mean_queues = []
     all_mean_waits = []
@@ -43,7 +42,6 @@ def simulate_24h_one_direction(green_sec: int, red_sec: int, duration_per_hour: 
     return hourly_mean_queue, hourly_mean_wait
 
 def _compute_comparison_stats(real_lam, sim_lam, green, red, duration_sec=3600):
-    """Хоёр λ-ийн симуляцийн статистикийг тооцоолж буцаана."""
     q_real, w_real = simulate_intersection(real_lam, green, red, duration_sec)
     q_sim, w_sim = simulate_intersection(sim_lam, green, red, duration_sec)
     stats = {

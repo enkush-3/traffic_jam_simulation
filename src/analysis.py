@@ -1,5 +1,4 @@
 import numpy as np
-from simulation import run_monte_carlo
 from model import simulate_intersection
 
 

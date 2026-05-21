@@ -8,27 +8,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 OUTPUT_DIR = "output/"
-os.makedirs(OUTPUT_DIR, exist_ok=True) 
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-
-"""
-
-1 chigleliin simulation hiih, n train = 1000 udaa davtsan,
-
-huvisagchid
-    green 40 sec, 
-    red 50 sec, 
-    lam = 15
-
-garalt davtalt buriin 
-    - daraalal urt,
-    - huleeh hugatsaa
-    
-garalt davtaltiing dundaj
-    - daraalal urt,
-    - huleeh hugatsaa
-
-"""
 def plot_one_hour_direction_queue():
     queue_log, wait_times = run_monte_carlo(n_trials=100)
     
@@ -58,23 +39,7 @@ def plot_one_hour_direction_queue():
     
     plt.tight_layout()
 
-    plt.savefig(f'{OUTPUT_DIR}A. one_direction_queue_wait.png')
-
-
-"""
-n trainiig 100 udaa davtsan, 
-    - Зүүнээс баруун тийш (ногоон 40 секунд асна) 
-    - хойноос өмнө тийш (ногоон 50 секунд асна) хуваарилалт
-
-galalt davtalt buriin
-    - daraalal urt,
-    - huleeh hugatsaa
-
-garalt davtaltiing dundaj
-    - daraalal urt,
-    - huleeh hugatsaa
-
-"""
+    plt.savefig(f'{OUTPUT_DIR}A.one_direction_queue_wait.png')
 
 def plot_4_directions_queue():
     
@@ -97,7 +62,7 @@ def plot_4_directions_queue():
         ax.legend(loc='upper right')
     fig1.suptitle('4 чиглэлийн дарааллын уртын харьцуулалт', fontsize=16)
     plt.tight_layout()
-    plt.savefig(f'{OUTPUT_DIR}B-1. four_directions_queue.png')
+    plt.savefig(f'{OUTPUT_DIR}B-1.four_directions_queue.png')
 
 
 
@@ -153,7 +118,7 @@ def plot_24h_four_directions():
     fig1.suptitle('24 цагийн дарааллын урт (4 чиглэл)', fontsize=16)
     fig2.suptitle('24 цагийн хүлээх хугацаа (4 чиглэл)', fontsize=16)
     plt.tight_layout()
-    plt.savefig(f'{OUTPUT_DIR}C. 24h_four_directions.png')
+    plt.savefig(f'{OUTPUT_DIR}C.24h_four_directions.png')
     
 
 def plot_optimal_signal(lams=None, descriptions=None, configs=None):
@@ -210,7 +175,7 @@ def plot_optimal_signal(lams=None, descriptions=None, configs=None):
     
     fig.suptitle('Гэрлэн дохионы хуваарилалтын харьцуулалт', fontsize=14)
     fig.tight_layout()
-    plt.savefig(f'{OUTPUT_DIR}D. optimal_signal_comparison.png')
+    plt.savefig(f'{OUTPUT_DIR}D.optimal_signal_comparison.png')
 
 def plot_histogram_wait_times():
     _, wait_times = simulate_intersection()
@@ -220,7 +185,7 @@ def plot_histogram_wait_times():
     plt.xlabel('Хүлээх хугацаа (сек)')
     plt.ylabel('Машины тоо')
     plt.grid(axis='y', alpha=0.3)
-    plt.savefig(f'{OUTPUT_DIR}E-1. wait_time_histogram.png')
+    plt.savefig(f'{OUTPUT_DIR}E-1.wait_time_histogram.png')
 
 
 def plot_convergence_and_confidence():
@@ -247,7 +212,7 @@ def plot_convergence_and_confidence():
     plt.ylabel('Дундаж хүлээх хугацаа (сек)')
     plt.title('Монте-Карло давталтын тогтворжилт')
     plt.grid(True, alpha=0.3)
-    plt.savefig(f'{OUTPUT_DIR}E-2. monte_carlo_convergence.png')
+    plt.savefig(f'{OUTPUT_DIR}E-2.monte_carlo_convergence.png')
 
 
 def plot_comparison(real_lam=26.666, sim_lam=15, green=60, red=30, duration_sec=3600):
@@ -278,7 +243,7 @@ def plot_comparison(real_lam=26.666, sim_lam=15, green=60, red=30, duration_sec=
     ax2.legend()
 
     plt.tight_layout()
-    plt.savefig(f'{OUTPUT_DIR}F. real_vs_sim_comparison.png')
+    plt.savefig(f'{OUTPUT_DIR}F.real_vs_sim_comparison.png')
 
 
 
