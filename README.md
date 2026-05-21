@@ -61,18 +61,18 @@ pip install -r requirements.txt
 2. **output/** хавтас автомат үүснэ (код доторх `os.makedirs(OUTPUT_DIR, exist_ok=True)`).
 3. **Үндсэн графикуудыг гаргах**:
    ```bash
-   cd /path/to/project
+   cd traffic_jam_simulation/
    python visualization.py
    ```
    Энэ нь дараах зургуудыг `output/` дотор үүсгэнэ:
-    - `A. one_direction_queue_wait.png`
-    - `B-1. four_directions_queue.png`
-    - `B-2. four_directions_wait.png`
-    - `C. 24h_four_directions.png`
-    - `D. optimal_signal_comparison.png`
-    - `E-1. wait_time_histogram.png`
-    - `E-2. monte_carlo_convergence.png`
-    - `F. real_vs_sim_comparison.png`
+    - `A.one_direction_queue_wait.png`
+    - `B-1.four_directions_queue.png`
+    - `B-2.four_directions_wait.png`
+    - `C.24h_four_directions.png`
+    - `D.optimal_signal_comparison.png`
+    - `E-1.wait_time_histogram.png`
+    - `E-2.monte_carlo_convergence.png`
+    - `F.real_vs_sim_comparison.png`
 
 4. **Тестүүдийг ажиллуулах** (хэрэв `tests/` хавтас бэлэн бол):
    ```bash
